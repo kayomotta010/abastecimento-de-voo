@@ -1,56 +1,82 @@
 body {
-            font-family: Arial, sans-serif; /* Fonte mais limpa */
-            background-color: #e9ecef; /* Fundo cinza clarinho */
-            display: flex; /* Usado para centralizar o painel na tela */
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Ocupa 100% da altura da tela */
-            margin: 0;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        .painel {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px; /* Bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve */
-            text-align: center; /* Centraliza o texto */
-        }
+.painel {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-        h2 {
-            color: #333;
-            margin-top: 0;
-        }
+h2 {
+    color: #333;
+    margin-top: 0;
+}
 
-        #painelCombustivel {
-            font-size: 20px;
-            font-weight: bold;
-            color: #0056b3; /* Azul para destacar o texto do combustível */
-            margin: 20px 0 30px 0;
-        }
+#painelCombustivel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0056b3;
 
-        button {
-            padding: 12px 20px;
-            font-size: 16px;
-            margin: 5px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer; /* Muda a setinha do mouse para a "mãozinha" */
-            color: white;
-            font-weight: bold;
-        }
+    margin: 20px 0 30px 0;
+}
 
-        /* Botão de Gastar: Vermelho */
-        #btnGastar {
-            background-color: #dc3545; 
-        }
-        #btnGastar:hover {
-            background-color: #c82333; /* Fica mais escuro ao passar o mouse */
-        }
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
 
-        /* Botão de Abastecer: Verde */
-        #btnAbastecerSeguro {
-            background-color: #28a745; 
-        }
-        #btnAbastecerSeguro:hover {
-            background-color: #218838;
-        }
+
+#btnGastar {
+    background-color: #dc3545;
+}
+
+#btnGastar:hover {
+    background-color: #c82333;
+
+}
+
+
+#btnAbastecerSeguro {
+    background-color: #28a745;
+}
+
+#btnAbastecerSeguro:hover {
+    background-color: #218838;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid #e9ecef;
+}
+
+.btnAzul {
+    background-color: #007bff;
+    margin-top: 15px;
+}
+
+.btnAzul:hover {
+    background-color: #0056b3;
+}

@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>abastecimento do voo simulaçao</title>
-    <link rel="stylesheet" href="/stile.css">
+    <title>Abastecimento do Voo Simulação</title>
+    <link rel="stylesheet" href="stile.css">
 </head>
 
 <body>
-<div class="painel">
-        <h2>Abastecimento do Voo VIP-001</h2>
-        <p id="painelCombustivel">O tanque do voo VIP-001 está em 100%</p>
+    <div class="painel">
+        <h2>Registro de Voo</h2>
         
-        <button id="btnGastar">Gastar (Voar)</button>
-        <button id="btnAbastecerSeguro">Abastecer 10%</button>
-    </div>
-</body>
+        <input type="text" id="inputCodigo" placeholder="Código (Ex: VIP-001)"><br>
+        <input type="text" id="inputOrigem" placeholder="Origem do Voo"><br>
+        <input type="text" id="inputDestino" placeholder="Destino do Voo"><br>
+        <button id="btnRegistrar" class="btnAzul">Registrar Voo</button>
+        
+        <p id="avisoSistema"><b>Preencha os dados e registre o voo.</b></p>
+        
+        <hr>
 
-<script src="script.js"></script>
+        <h3 id="tituloVoo">Voo não registrado</h3>
+        <p id="painelCombustivel">O tanque está em 0%</p>
+        
+        <button id="btnGastar" disabled>Gastar (Voar)</button>
+        <button id="btnAbastecerSeguro" disabled>Abastecer 10%</button>
+    </div>
+
+    <script type="module" src="painel.js"></script>
+</body>
 
 </html>
